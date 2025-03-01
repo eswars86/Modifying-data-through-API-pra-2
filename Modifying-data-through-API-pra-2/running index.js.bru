@@ -1,0 +1,19 @@
+meta {
+  name: running index.js
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/menu/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Updated Dish",
+    "description": "New description",
+    "price": 12.99
+  }
+}
